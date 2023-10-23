@@ -21,4 +21,8 @@ export CUDA_VER=cpu && ./setup-libtorch.sh
 sudo xattr -r -d com.apple.quarantine /usr/local/lib/libtorch
 ```
 
-无法将依赖libtorch的代码编译成动态或者静态链接库，只能编成可执行文件
+~~无法将依赖libtorch的代码编译成动态或者静态链接库，只能编成可执行文件~~
+
+~~直接使用cmake可以构建，但是用xmake构建的时候就会出错~~
+
+原因是因为foo文件夹下的目标产物名字不对

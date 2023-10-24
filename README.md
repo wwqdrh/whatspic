@@ -1,6 +1,18 @@
 # whatspic
 a picture classification for c++
 
+## dependency
+
+- libtorch
+- opencv
+  - libiconv
+
+# dev
+
+合并compile_commands.json
+
+`jq -s 'map(.[])' $(find . -type f -name "compile_commands.json") > compile_commands.json`
+
 ## train
 
 pytorch
